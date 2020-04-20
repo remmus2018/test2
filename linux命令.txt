@@ -1,0 +1,113 @@
+rm -f 20181119_dht.log      删除目录下文件 -f, --force    忽略不存在的文件，从不给出提示。
+
+rm -f * 删除目录下所有
+
+ps -ef|grep java   显示java这个进程
+
+kill -9 1574
+
+
+[root@localhost ~]#
+分别代表用户名（root），主机名（localhost），当前路径（~,当前用户的home目录），权限标志位（#代表root，$代表普通用户）
+ 
+返回上一级目录可以使用命令：cd ..
+
+查看8000端口使用情况，lsof -i:8000
+
+查看8000端口的情况 netstat -tunlp | grep 8000
+
+
+Ctrl+C :终止当前命令
+Ctrl+L（clear）:清屏
+Tab :快捷键，补全命令或文件名
+
+
+解压安装
+
+
+
+
+放开端口
+# vim /etc/sysconfig/iptables
+
+添加如下端口行：
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+
+重启防火墙：
+# service iptables restart
+
+
+设置网络 
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+重启网络
+service network restart
+
+
+ps -ef|grep ngnix 
+
+netstat -tnlp|grep nginx 端口使用
+
+netstat -tunlp
+ 	
+lsof -i:端口号 用于查看某一端口的占用情况
+
+ls -al 在文件夹下查看软连接指向的文件目录
+
+/usr/bin 众多的应用程序
+
+/etc 该目录存放系统管理时要用到的各种配置文件和子目录，例如网络配置文件、文件系统、X系统配置文件、设备配置信息
+
+/var 该目录存放那些经常被修改的文件，包括各种日志、数据文件
+
+/lib 该目录用来存放系统动态链接共享库
+
+/bin 该目录中存放Linux的常用命令。
+
+/sbin 该目录用来存放系统管理员使用的管理程序。
+
+df -h 磁盘空间
+
+
+*.zip  *.gz  *.bz2  *.tar.gz  *.tar.bz2
+
+.zip 
+zip -r 压缩文件名 源文件名 压缩目录
+
+解压缩：unzip 压缩文件
+
+
+.gz
+压缩
+gzip file1
+解压
+gzip -d X.gz
+
+
+.tar
+打包
+tar cvf X.tar file1 file2 directory1 directory2
+解包
+tar xvf X.tar
+
+.tar.gz
+压缩方式： 
+     tar -czvf archive_name.tar.gz filename
+解压缩方式： 
+     tar -xzvf archive_name.tar.gz 
+
+
+语法:tar 模式[选项] [路径]
+	模式:
+	-c 创建打包文件
+	-r 追加文件至打包文件
+	-t 列出打包文件内容
+	-x 释放打包文件
+	选项：
+	-f 指定打包文件的名称
+	-j 打包时通过bzip2格式压缩
+	-z 打包时通过gzip格式压缩
+	-v 显示压缩或解压缩的过程
+
+
+
+

@@ -1,0 +1,51 @@
+
+关闭防火墙  service iptables stop
+
+防火墙状态  service iptables status
+
+查看网络配置  ifconfig 
+
+设置网络 vi /etc/sysconfig/network-scripts/ifcfg-eth0
+
+重启网络 service network restart
+
+
+设置网关 vim /etc/sysconfig/network 打开文件后添加GATEWAY=192.168.0.1
+
+
+设置DNS vim /etc/resolv.conf 打开文件后，直接添加或者将DNS1、DNS2更改为以下两行代码
+
+
+查看某个程序 ps -ef|grep ngnix 
+
+查看某个程序的端口使用 netstat -tnlp|grep nginx  netstat -tunlp
+
+
+tracker和storage配置文件位置 cd /etc/fdfs
+
+/usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf restart
+
+/usr/bin/fdfs_storaged /etc/fdfs/storage.conf restart
+
+删除目录下所有文件包括文件夹（不包括自身） rm -rf * 
+
+fdfs_monitor /etc/fdfs/storage.conf
+
+
+查看磁盘剩余空间信息  df -hl 
+
+查看当前所处的路径 pwd
+
+解压文件 tar -zxvf jdk-8u212-linux-x64.tar.gz
+
+
+
+
+
+
+
+
+
+
+
+

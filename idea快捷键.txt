@@ -1,0 +1,62 @@
+Ctrl alt O  重新导入包
+
+Ctrl I 实现接口方法快捷键
+
+Ctrl alt T  try catch快捷生成方式 
+
+alt + enter 报错提示
+
+ctrl + o extends的时候  查看父类中的方法
+
+ctrl + p  方法（） 里面的参数
+
+ctrl + alt + H 查看方法调用关系 
+
+ctrl + H 查看直接子类
+
+ctrl + Alt + U 查看结构类图
+
+alt + enter 替换代码
+
+ctrl + alt + B 接口的实现方法  （接口不能new, 使用的时候可以找到它的一个实现类去new它的实现类来使用）
+
+alt + f7 查看方法被谁调用
+
+psvm，（是public static void main() 首字母）
+
+fori, 出现提示 for循环
+
+sout，System.out.println()
+
+ctrl + alt + L 代码格式化
+
+Ctrl+N  查找类
+Ctrl+Shift+N 查找文件
+Ctrl+R 替换文本
+
+
+debug 查看选中代码值 alt+ F8
+
+Ctrl+E 可以找到Recent Files最近浏览过的文件
+ 
+Ctrl+Shift+E 可以找到Recently Changed Files最近修改过的文件
+
+Match case，是否匹配大小写
+
+Words，是否是一个单词
+
+Regex，通过正则表达式搜索
+
+File mask，可以指定在哪个文件下搜索 
+In Project，在项目下搜索
+Module，在模块下搜索
+Directory，在目录下搜索
+Scope，在指定区域内搜索，还可以自定义搜索区域
+
+F2，自动将光标定位到报错的位置
+
+ctrl+alt+v 生成返回对象
+
+
+
+

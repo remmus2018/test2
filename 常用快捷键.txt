@@ -1,0 +1,5 @@
+在当前目录下进入cmd   shift + 右键
+
+telnet IP 端口 或者 telnet 域名 端口
+
+远程桌面   点击“开始”，在搜索栏上输入“mstsc”
